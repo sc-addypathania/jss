@@ -72,7 +72,8 @@ jobs:
         env:
           YARN_ENABLE_IMMUTABLE_INSTALLS: false
 
-      # Lint templates
+      # Lint templates 
+      # test
       - name: Lint templates
         run: |
           yarn lint-samples ${{ env.lernaSinceFlag }}
