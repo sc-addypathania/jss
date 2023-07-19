@@ -59,7 +59,7 @@ describe('initRunner', () => {
 
     await initRunner(templates, args);
 
-    expect(log.getCalls().length).to.equal(2);
+    expect(log.getCalls().length).to.equal(1);
     templates.forEach((template, i) => {
       expect(log.getCall(i).args[0]).to.equal(chalk.cyan(`Initializing '${template}'...`));
     });
